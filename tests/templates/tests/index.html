@@ -1,4 +1,4 @@
-{% load robothash %}
+{% load robohash %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +13,9 @@
 </head>
 <body>
 <h1>A random SVG robot</h1>
+<h2>Inline :</h2>
 {% robohash random %}
+<h2>IMG tag :</h2>
+<img src="/robohash/{{ random }}/">
 </body>
 </html>

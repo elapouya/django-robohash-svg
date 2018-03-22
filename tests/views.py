@@ -1,5 +1,5 @@
 #
-# Created : 2018-02-16
+# Created : 2018-03-22
 #
 # @author: Eric Lapouyade
 #
@@ -13,3 +13,4 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['random'] = str(random())
+        return context

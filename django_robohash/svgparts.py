@@ -1,3 +1,9 @@
+#
+# Created : 2018-03-22
+#
+# @author: Eric Lapouyade
+#
+
 parts={
 'accessory' : (
     '<path d="M141.5 79.5s-1 11-1 17v8s-11 3-15 3h-10s-1-11-1-15-2-10 6-13a138 138 0 0 1 14-1c6 0 7 1 7 1z" fill="currentColor"/><path d="M141.5 79.5s-1 11-1 17v8s-11 3-15 3h-10s-1-11-1-15-2-10 6-13a138 138 0 0 1 14-1c6 0 7 1 7 1z" stroke-linecap="round" stroke-linejoin="round" stroke="#000" fill="none"/><path d="M116.5 106.5s22-2.67 24-3.33v1.33s-11.42 2.74-13.21 2.87-11.79.13-11.79.13v-.94l1-.06" fill-opacity=".4" stroke-width=".75" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/><circle cx="137.5" cy="100.5" r="1"/><circle cx="139" cy="81" r=".75"/><circle cx="117" cy="103" r=".75"/><path d="M117 88h3a3.49 3.49 0 0 1 2-1c1 0 9.5-1.5 9.5-1.5s-9 7-10 13v4l7-1s-1-6 2-10a22.28 22.28 0 0 1 7-6v-3l-1-1-18 2-1 1z" fill-opacity=".2" stroke-miterlimit="10" stroke-width=".5" stroke="#000"/>',
@@ -60,3 +66,16 @@ parts={
     '<path d="M105.5 180.5s18 3 32 0 32-11 32-11h1.33a1.13 1.13 0 0 1 .85.65l4.82 17.35v3a3.73 3.73 0 0 1-.94 1.67c-2.53 1.85-9.8 6.88-17.06 9.3a72.67 72.67 0 0 1-25 4c-8.1 0-21.07-4.05-23.57-4.86l-.43-.14-5-19a1 1 0 0 1 1-.97z" fill="currentColor"/><path d="M105.5 180.5s18 3 32 0 32-11 32-11h1.33a1.13 1.13 0 0 1 .85.65l4.82 17.35v3a3.73 3.73 0 0 1-.94 1.67c-2.53 1.85-9.8 6.88-17.06 9.3a72.67 72.67 0 0 1-25 4c-8.1 0-21.07-4.05-23.57-4.86l-.43-.14-5-19a1 1 0 0 1 1-.97z" stroke-linecap="round" stroke-linejoin="round" stroke="#000" fill="none"/><path d="M105.5 180.5s18 3 32 0 32-11 32-11h1.33a1.13 1.13 0 0 1 .85.65l4.82 17.35v3a3.73 3.73 0 0 1-.94 1.67c-2.53 1.85-9.8 6.88-17.06 9.3a72.67 72.67 0 0 1-25 4c-8.1 0-21.07-4.05-23.57-4.86l-.43-.14-5-19a1 1 0 0 1 1-.97z" opacity=".1" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/><path d="M108.33 195.83c0-.11-2.8-10.45-3.4-12.94a6.79 6.79 0 0 1-.3-2 2.1 2.1 0 0 1 .46 0 3 3 0 0 1 1.77.84c.32.85 3 8.16 4 11.88a31.56 31.56 0 0 1 1 5.64l-2.35.78z" opacity=".4"/><path d="M105.08 181.25h.09a2.55 2.55 0 0 1 1.36.68c.43 1.16 3 8.16 3.91 11.75a33.25 33.25 0 0 1 .95 5.29l-1.7.57-1-3.8c0-.1-2.8-10.45-3.4-12.93a13.31 13.31 0 0 1-.31-1.55h.1m0-.75c-.92 0-1.11 0-.52 2.48s3.44 12.94 3.44 12.94l1.2 4.57 3-1a28 28 0 0 0-1-6c-1-4-4-12-4-12a3.49 3.49 0 0 0-2-1z"/><path d="M111.5 199.5s17 6 36 2 29-11.87 29-11.87v.88l-.36.94-.44.64-1.7 1.24-7 4.33-7.1 3.34-10.68 3-4.63.79-5.34.51-5.75.16-5.06-.39-7.44-1.37-6.43-1.7-5.07-1.54-.12-.67z" fill-opacity=".4" stroke-miterlimit="10" stroke-width=".75" stroke="#000"/><path d="M116.51 200.51c1-3 3-11 3-11s4 2 13 2 27-7 27-7 7 6 8 10" stroke-linecap="round" stroke-linejoin="round" stroke="#000" fill="none"/>',
     ),
 }
+
+template = """
+<svg viewBox="0 0 300 300" width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/2000/xlink">                
+<g style="color:#{color}">
+    <rect fill="#{bgcolor}" x="0" y="0" width="320" height="320"></rect>
+    {body}
+    {face}
+    {eyes}
+    {mouth}
+    {accessory}
+</g>
+</svg>
+"""

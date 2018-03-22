@@ -35,7 +35,7 @@ def get_version(pkg):
     raise RuntimeError("Unable to find __version__ string in %s." % path)
 
 
-setup(name='django-listing',
+setup(name='django-robohash-svg',
       version=get_version('django_robohash'),
       description='Library for creating svg robots',
       long_description=long_description,
@@ -54,13 +54,12 @@ setup(name='django-listing',
           "Programming Language :: Python :: 3.5",
           "Programming Language :: Python :: 3.6",
       ],
-      keywords='table, datatable, listing, data grid',
-      url='https://github.com/elapouya/django-listing',
+      keywords='robots, robohash, svg, hash',
+      url='https://github.com/elapouya/django-robohash-svg',
       author='Eric Lapouyade',
       author_email='elapouya@gmail.com',
       license='LGPL 2.1',
       packages=find_packages(exclude=['tests.*','tests','docs.*','docs']),
       package_data={'': ['*.png',],},
-      install_requires=['django>=2','Sphinx', 'sphinxcontrib-napoleon',
-                        'django_extensions'],
+      install_requires=['django>=2','Sphinx'],
       zip_safe=False)
