@@ -46,11 +46,11 @@ You can custom the url if you want, but keep "<string>".
 
 The you can display image like this ::
 
-    <img src="/robohash/{{ random }}/">
+    <img src="/robohash/{{ a_string }}/">
 
     or
 
-    <img src="/robohash/{{ random }}/?width=120&height=120">
+    <img src="/robohash/{{ a_string }}/?width=120&height=120">
 
 
 Default robots size is 300x300
