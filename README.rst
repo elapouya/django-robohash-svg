@@ -2,6 +2,12 @@
 django-robohash-svg
 ===================
 
+.. class:: no-web
+
+    .. image:: https://raw.githubusercontent.com/elapouya/django-robohash-svg/master/django_robohash.svg
+        :width: 100%
+        :align: center
+
 Django app for creating svg robots
 
 Installation
@@ -44,7 +50,7 @@ If you want to serve robot images, edit your urls.py and use robohash view ::
 
 You can custom the url if you want, but keep "<string>".
 
-The you can display image like this ::
+Then you can display image like this ::
 
     <img src="/robohash/{{ a_string }}/">
 
@@ -54,3 +60,10 @@ The you can display image like this ::
 
 
 Default robots size is 300x300
+
+You can generate the svg code by running this function::
+
+    from django_robohash.robotmaker import make_robot_svg
+    ...
+    svg_code = make_robot_svg("my string", width=300, height=300)
+
