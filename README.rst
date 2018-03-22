@@ -2,9 +2,9 @@
 django-robohash-svg
 ===================
 
-  .. image:: https://raw.githubusercontent.com/elapouya/django-robohash-svg/master/django_robohash.svg
-        :width: 100%
-        :align: center
+.. image:: https://raw.githubusercontent.com/elapouya/django-robohash-svg/master/django_robohash.svg
+    :width: 100%
+    :align: center
 
 Django app for creating svg robots
 
