@@ -2,9 +2,7 @@
 django-robohash-svg
 ===================
 
-.. class:: no-web
-
-    .. image:: https://raw.githubusercontent.com/elapouya/django-robohash-svg/master/django_robohash.svg
+  .. image:: https://raw.githubusercontent.com/elapouya/django-robohash-svg/master/django_robohash.svg
         :width: 100%
         :align: center
 
