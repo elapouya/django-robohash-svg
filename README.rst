@@ -8,7 +8,7 @@ django-robohash-svg
 
 Django app for creating svg robots
 
-The idea: from any string (username, first name and last name, etc...), obtain a unique svg robot to display. This useful for creating avatars or for testing purposes.
+The idea: from any string (username, first name and last name, etc...), obtain a unique svg robot to display. This is useful for creating avatars or for testing purposes.
 
 Installation
 ------------
