@@ -15,7 +15,7 @@ Installation
 
 Install with pip::
 
-    pip install django_robohash
+    pip install django_robohash_svg
 
 Then declare the app in your settings.py ::
 
